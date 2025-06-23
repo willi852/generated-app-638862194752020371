@@ -1,0 +1,111 @@
+.calculator {
+  width: 320px;
+  margin: 50px auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+}
+
+.display {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+  text-align: right;
+  font-size: 36px;
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.keypad-row {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.number {
+  background-color: #f0f0f0;
+}
+
+.operation {
+  background-color: #f39c12;
+  color: white;
+}
+
+.equals {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.clear {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.scientific-toggle {
+  background-color: #3498db;
+  color: white;
+}
+
+.scientific-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.scientific-section button {
+  background-color: #9b59b6;
+  color: white;
+  padding: 15px;
+}
+
+.number {
+  background-color: #e0e0e0;
+}
+
+.number:hover {
+  background-color: #d0d0d0;
+}
+
+.operation:hover {
+  background-color: #e67e22;
+}
+
+.equals:hover {
+  background-color: #27ae60;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.scientific-toggle:hover {
+  background-color: #2980b9;
+}
+
+.scientific-section button:hover {
+  background-color: #8e44ad;
+}
